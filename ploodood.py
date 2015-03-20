@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 import click
 import requests
 import sys
@@ -19,6 +18,3 @@ def ploodood(**kwargs):
 
     for w in res.words.word:
         click.echo(w.cdata)
-
-if __name__ == '__main__':
-    ploodood()
