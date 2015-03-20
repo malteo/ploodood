@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 import click
 import requests
+import sys
 import untangle
 
 @click.command()
@@ -11,6 +12,9 @@ import untangle
 def ploodood(**kwargs):
     """Generates words that "sound like real words"."""
     req = requests.post("http://www.ploodood.net/genWords.php", data=kwargs)
+
+    reload(sys)
+    sys.setdefaultencoding('iso-8859-1')
     res = untangle.parse(req.text)
 
     for w in res.words.word:
