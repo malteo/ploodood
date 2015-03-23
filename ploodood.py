@@ -9,7 +9,11 @@ import untangle
 @click.option('--maxlen', default=16)
 @click.option('--wordcount', default=1)
 def ploodood(**kwargs):
-    """Generates words that "sound like real words"."""
+    """
+    Generates words that "sound like real words".
+
+    Original work by The Ploodood! http://www.ploodood.net/
+    """
     req = requests.post("http://www.ploodood.net/genWords.php", data=kwargs)
 
     reload(sys)
