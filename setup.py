@@ -9,7 +9,6 @@ setup(
     url = 'https://github.com/malteo/ploodood',
     download_url = 'https://github.com/malteo/ploodood/tarball/0.1',
     keywords = ['password', 'generator', 'cli', 'command line'],
-    packages=['ploodood'],
     py_modules=['ploodood'],
     classifiers = [],
     install_requires=[
