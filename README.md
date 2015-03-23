@@ -9,7 +9,13 @@ I use it to generate moderately strong passwords.
 Install globally with `pip`:
 
 ```bash
-pip install ploodood
+sudo pip install ploodood
+```
+
+or with [pipsi](https://github.com/mitsuhiko/pipsi):
+
+```bash
+pipsi install ploodood
 ```
 
 ## Usage
